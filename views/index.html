@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kumpulin</title>
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert -->
+
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+
+  <body>
+    <!-- navbar start-->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Kumpulin.</a>
+
+      <div class="navbar-nav">
+        <a href="#">HOME</a>
+        <a href="#about">TENTANG DOSEN</a>
+        <a href="#contact">KONTAK</a>
+        <a href="#kumpul">KUMPUL TUGAS</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu">
+          <i data-feather="menu"></i>
+        </a>
+      </div>
+    </nav>
+    <!-- navbar end-->
+
+    <!-- hero section start-->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>WEBSITE PENGUMPULAN<span> TUGAS</span></h1>
+        <p>Kumpulkan tugas kamu dimanapun dan kapanpun.</p>
+        <a href="#kumpul" class="cta">KUMPUL TUGAS SEKARANG</a>
+      </main>
+    </section>
+
+    <!-- hero section end-->
+
+    <!--about section start-->
+    <section id="about" class="about">
+      <h2><span>Tentang </span>Dosen</h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="../static/img/662e09df36e688be26afee62a07a5673 (copy).png" alt="tentang dosen" />
+        </div>
+        <div class="content">
+          <h3>Kenapa saya?</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+            repellendus repudiandae perspiciatis eveniet nulla mollitia magnam
+            placeat natus debitis pariatur.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--about section end-->
+    <!--kumpulin tugas section start-->
+    <section id="kumpul" class="kumpul">
+      <h3><span>Kumpul </span>Tugas</h3>
+      <form action="/" method="post" enctype="multipart/form-data">
+        <div class="input-group">
+          <i data-feather="user"></i>
+          <input type="text" name="nama" placeholder="NAMA" />
+        </div>
+        <div class="input-group">
+          <i data-feather="info"></i>
+          <input type="text" name="nim" placeholder="NIM" />
+        </div>
+        <div class="input-group">
+          <i data-feather="tag"></i>
+          <input type="text" name="kelas" placeholder="KELAS" />
+        </div>
+        <div class="input-group">
+          <i data-feather="mail"></i>
+          <input type="text" name="email" placeholder="EMAIL" />
+        </div>
+        <div class="input-group">
+          <i data-feather="phone"></i>
+          <input type="text" name="no_hp" placeholder="NOMOR HP" />
+        </div>
+        <div class="input-group">
+          <i data-feather="file"></i>
+          <input type="file" name="file_tugas"/>
+        </div>
+        <button type="submit" class="btn">KIRIM TUGAS</button>
+      </form>
+    <script>
+      // Cek jika ada parameter success di URL
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('success')) {
+          // Menggunakan SweetAlert untuk pop-up notifikasi
+          Swal.fire({
+              title: 'Berhasil!',
+              text: 'Tugas berhasil dikirim.',
+              icon: 'success',
+              confirmButtonText: 'OK'
+          });
+      }
+  </script>
+    </section>
+
+    <!--kumpulin tugas section end-->
+
+    <!-- contact section start-->
+    <section id="contact" class="contact">
+      <h3><span>Kon</span>tak</h3>
+      <p>
+        Jika menemukan kesalahan baik berupa bug ataupun kesalahan apapun yang
+        ada pada website, silahkan hubungi saya.
+      </p>
+
+      <div class="btn-wrap">
+        <a href="https://www.instagram.com/ahmadfathir19" class="cta btn-cta"
+          >KIRIM PESAN</a
+        >
+      </div>
+    </section>
+    <!-- contact section end-->
+
+    <!--footer start-->
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com/universitasbosowa_official"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://www.youtube.com/@official.unibos"
+          ><i data-feather="youtube"></i
+        ></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Dosen</a>
+        <a href="#menu">Kumpul</a>
+        <a href="#contact">Kontak</a>
+      </div>
+      <div class="credit">
+        <p>
+          Created by
+          <a href="https://www.instagram.com/ahmadfathir19">Ahmad fathir</a>. |
+          &copy; 2024.
+        </p>
+      </div>
+    </footer>
+
+    <!--footer end-->
+
+    <!--feather icons-->
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="../static/js/script.js"></script>
+  </body>
+</html>
