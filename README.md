@@ -1,24 +1,24 @@
 # Kumpulin.
-project/
-│
-├── main.go
-├── views/
-│   └── index.html
-├── static/
-|    ├── css/
-|    │   └── style.css
-|    ├── js/
-|    |   └── script.js
-|    └── img/
-|        ├── image3.jpg
-|        ├── image2.jpg
-|        └── image1.jpg
-├── models/
-|   └──modeltugas.go
-├── entities/
-|   └── tugas.go
-├── controllers/
-|   └── cont.go
-└── config/
-    ├── Tugas1.sql
-    └── conn.go
+project/<br>
+│<br>
+├── main.go<br>
+├── views/<br>
+│   └── index.html<br>
+├── static/<br>
+|    ├── css/<br>
+|    │   └── style.css<br>
+|    ├── js/<br>
+|    |   └── script.js<br>
+|    └── img/<br>
+|        ├── image3.jpg<br>
+|        ├── image2.jpg<br>
+|        └── image1.jpg<br>
+├── models/<br>
+|   └──modeltugas.go<br>
+├── entities/<br>
+|   └── tugas.go<br>
+├── controllers/<br>
+|   └── cont.go<br>
+└── config/<br>
+    ├── Tugas1.sql<br>
+    └── conn.go<br>
